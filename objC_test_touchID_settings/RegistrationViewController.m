@@ -74,7 +74,12 @@
                                                     handler:^(UIAlertAction * _Nonnull action) {
 
                                                       if (self.errorCode == LAErrorTouchIDNotEnrolled) {
-                                                        [self zeroCountFingers];
+                                                          NSURL *settingsURL = [NSURL URLWithString:@"prefs:root=TOUCHID_PASSCODE"];
+                                                          if ([[UIApplication sharedApplication] canOpenURL:settingsURL]) {
+                                                              [self zeroCountFingers];
+                                                          } else {
+                                                              NSLog(@"Can't fallthrough to touch ID settings");
+                                                          }
                                                       } else {
                                                         [self method];
                                                       }
