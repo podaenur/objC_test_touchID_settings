@@ -56,8 +56,6 @@
   }
 }
 
-#pragma mark - Custom Accessors
-
 #pragma mark - Actions
 
 - (IBAction)onClear:(id)sender {
@@ -72,8 +70,6 @@
     [self validatePassCode:sender.text];
   }
 }
-
-#pragma mark - Public
 
 #pragma mark - Private
 
@@ -95,14 +91,5 @@
 - (void)askUserValidateFinger {
   
 }
-
-#pragma mark - Segue
-#pragma mark - Animations
-#pragma mark - Protocol conformance
-#pragma mark - Notifications handlers
-#pragma mark - Gestures handlers
-#pragma mark - KVO
-#pragma mark - NSCopying
-#pragma mark - NSObject
 
 @end

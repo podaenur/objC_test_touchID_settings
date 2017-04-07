@@ -48,8 +48,6 @@
   }
 }
 
-#pragma mark - Custom Accessors
-
 #pragma mark - Actions
 
 - (IBAction)onSave:(id)sender {
@@ -62,8 +60,6 @@
     }
   }
 }
-
-#pragma mark - Public
 
 #pragma mark - Private
 
@@ -140,14 +136,5 @@
   
   [self presentViewController:controller animated:YES completion:nil];
 }
-
-#pragma mark - Segue
-#pragma mark - Animations
-#pragma mark - Protocol conformance
-#pragma mark - Notifications handlers
-#pragma mark - Gestures handlers
-#pragma mark - KVO
-#pragma mark - NSCopying
-#pragma mark - NSObject
 
 @end

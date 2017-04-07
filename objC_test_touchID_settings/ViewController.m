@@ -35,8 +35,6 @@
   self.enterButton.enabled = (savedPassCode.length > 0);
 }
 
-#pragma mark - Custom Accessors
-
 #pragma mark - Actions
 
 - (IBAction)onPush:(id)sender {
@@ -44,8 +42,6 @@
     NSURL* url = [NSURL URLWithString:text];
     [[UIApplication sharedApplication] openURL:url];
 }
-
-#pragma mark - Public
 
 #pragma mark - Private
 
@@ -55,14 +51,5 @@
   view.layer.borderWidth = 2.f;
   view.layer.borderColor = view.tintColor.CGColor;
 }
-
-#pragma mark - Segue
-#pragma mark - Animations
-#pragma mark - Protocol conformance
-#pragma mark - Notifications handlers
-#pragma mark - Gestures handlers
-#pragma mark - KVO
-#pragma mark - NSCopying
-#pragma mark - NSObject
 
 @end
